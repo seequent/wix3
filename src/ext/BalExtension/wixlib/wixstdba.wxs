@@ -74,11 +74,13 @@
             <Payload Name='thm.wxl' Compressed='yes' SourceFile='!(wix.WixStdbaThemeWxl=HyperlinkTheme.wxl)' />
             <Payload Name='logo.png' Compressed='yes' SourceFile='!(wix.WixStdbaLogo=logo.png)' />
             <Payload Name='logoside.png' Compressed='yes' SourceFile='!(wix.WixStdbaLogoSide=logoside.png)' />
+            <Payload Name='!(wix.WixStdbaLicenseRtfName=license.rtf)' Compressed='yes' SourceFile='!(wix.WixStdbaLicenseRtf=LoremIpsumLicense.rtf)' />
         </PayloadGroup>
 
         <CustomTable Id='WixStdbaInformation'>
             <Row>
                 <Data Column='LicenseUrl'>!(wix.WixStdbaLicenseUrl)</Data>
+                <Data Column='LicenseFile'>!(wix.WixStdbaLicenseRtfName=license.rtf)</Data>
             </Row>
         </CustomTable>
     </Fragment>
